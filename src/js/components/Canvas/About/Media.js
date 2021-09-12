@@ -1,7 +1,7 @@
 import GSAP from 'gsap'
 import { Mesh, Program } from 'ogl'
 
-import Detection from 'classes/Detection'
+import Detection from '../classes/Detection'
 
 import fragment from 'shaders/plane-fragment.glsl'
 import vertex from 'shaders/plane-vertex.glsl'

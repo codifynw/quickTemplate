@@ -1,7 +1,7 @@
 import GSAP from 'gsap'
 import { Mesh, Program, Transform } from 'ogl'
 
-import Component from 'classes/Component'
+import Component from '../classes/Component'
 
 import fragment from 'shaders/collections-fragment.glsl'
 import vertex from 'shaders/collections-vertex.glsl'
