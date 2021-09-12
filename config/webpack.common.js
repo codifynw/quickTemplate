@@ -46,10 +46,10 @@ module.exports = {
     }),
 
     // ESLint configuration
-    new ESLintPlugin({
-      files: ['.', 'src', 'config'],
-      formatter: 'table',
-    }),
+    // new ESLintPlugin({
+    //   files: ['.', 'src', 'config'],
+    //   formatter: 'table',
+    // }),
 
     // Prettier configuration
     new PrettierPlugin(),
@@ -59,7 +59,11 @@ module.exports = {
   module: {
     rules: [
       // JavaScript: Use Babel to transpile JavaScript files
-      { test: /\.js$/, use: ['babel-loader'] },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: ['babel-loader'],
+      },
 
       // Images: Copy image files to build folder
       { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },

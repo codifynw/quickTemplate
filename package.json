@@ -50,5 +50,10 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:taniarascia/webpack-boilerplate"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "raw-loader": "^4.0.2",
+    "three": "^0.132.2"
   }
 }
