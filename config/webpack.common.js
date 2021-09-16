@@ -46,10 +46,10 @@ module.exports = {
     }),
 
     // ESLint configuration
-    new ESLintPlugin({
-      files: ['.', 'src', 'config'],
-      formatter: 'table',
-    }),
+    // new ESLintPlugin({
+    //   files: ['.', 'src', 'config'],
+    //   formatter: 'table',
+    // }),
 
     // Prettier configuration
     new PrettierPlugin(),
